@@ -8,12 +8,14 @@ import utilities.Driver;
 
 public class AmazonPage {
 
-    /* page sayfalari o web sayfasinda kullanilacak locate'ler
+    /* Ilk once parametresiz constructor olusturmak
+       page sayfalari o web sayfasinda kullanilacak locate'ler
        ve varsa login islemi gibi basit method'lar icin kullanilir
      */
 
    public AmazonPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+
+       PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(id="twotabsearchtextbox")
