@@ -37,7 +37,7 @@ public class C01_SoftAssert {
         //arama sonuclarının 1000'den fazla oldugunu dogrulayın
         amazonPage.aramaSonucuElementi.getText();
 
-       // 1-48 of over 6,000 results for "Java"
+            // 1-48 of over 6,000 results for "Java"
 
         aramaSonucYazisi=amazonPage.aramaSonucuElementi.getText();
 
@@ -51,8 +51,8 @@ public class C01_SoftAssert {
 
         softAssert.assertTrue(sonucSayisInt>1000);
 
-
         softAssert.assertAll();
+        Driver.closeDriver();
 
 
     }
