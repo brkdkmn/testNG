@@ -45,7 +45,7 @@ public class C01_SoftAssert {
 
         String javaSonucSayisiStr=sonucArr[3]; //6,000
 
-        javaSonucSayisiStr=javaSonucSayisiStr.replace("\\W",""); //6000
+        javaSonucSayisiStr=javaSonucSayisiStr.replaceAll("\\W",""); //6000
 
         int sonucSayisInt=Integer.parseInt(javaSonucSayisiStr);
 
