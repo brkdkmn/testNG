@@ -10,6 +10,21 @@ import java.time.Duration;
 
 public class Driver {
 
+    /*
+       Driver class'indan driver'i get driver() method'u ile kullaniyoruz
+       Sonradan projeye katilanlarin driver class'indan obje olusturarak
+       driver kullanmaya calismalarini engellemek icin
+
+       Driver class'ini SINGLETON PATERN ile duzenleyebiliriz
+
+       Bunun icin Driver class'inin parametresiz constructorunu olusturup access modifier'ini
+       PRIVATE yapmamiz yeterlidir.
+     */
+
+    private Driver(){
+
+    }
+
     static WebDriver driver;
 
     public static WebDriver getDriver(){
