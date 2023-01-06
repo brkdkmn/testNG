@@ -23,7 +23,6 @@ public class C01_PozitifLoginTest{
 
 
                 qualitydemyPage.loginButonu.click();
-                ReusableMethods.bekle(2);
                 qualitydemyPage.cookiesAccept.click();
                 ReusableMethods.bekle(2);
 

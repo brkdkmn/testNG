@@ -14,7 +14,7 @@ public class C04_NegativeLoginTesti {
     // giris yapilamadigini test edin
      QualitydemyPage qualitydemyPage=new QualitydemyPage();
     @Test
-    public void yanlisemailtesti(){
+    public void yanlisEmailTesti(){
 
         Driver.getDriver().get("https://www.qualitydemy.com/");
         qualitydemyPage.ilkLoginLinki.click();
@@ -28,7 +28,7 @@ public class C04_NegativeLoginTesti {
 
     }
     @Test
-    public void yanlispasswordtesti(){
+    public void yanlisPasswordTesti(){
         Driver.getDriver().get("https://www.qualitydemy.com/");
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.kullaniciEmailKutusu.sendKeys("user_1106147@login.com");
@@ -41,7 +41,7 @@ public class C04_NegativeLoginTesti {
 
     }
     @Test
-    public void yanlisEmailyanlisPasswordtesti(){
+    public void yanlisEmailyanlisPasswordTesti(){
         Driver.getDriver().get("https://www.qualitydemy.com/");
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.kullaniciEmailKutusu.sendKeys("user457@login.com");
