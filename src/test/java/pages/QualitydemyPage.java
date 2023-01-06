@@ -21,5 +21,7 @@ public class QualitydemyPage {
     public WebElement loginButonu;
     @FindBy(linkText="My cources")
     public WebElement basariliGirisCources;
+    @FindBy(xpath = "//*[text()='Accept']")
+    public WebElement cookiesAccept;
 
 }
